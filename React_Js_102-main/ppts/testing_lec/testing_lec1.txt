@@ -1,0 +1,23 @@
+TDD - Test-driven-development
+
+Unit Testing
+End to End Testing
+UAT
+Load Testing- Jmeter
+Sonar Cube- for code coverage not for testing
+BDD - selenium,cucumber
+
+Tools and Frameworks
+1. Jest- integration test - for groups of modules
+angular,reatc, vue js ,easy to learn, no setup,easy for smaller as well as larger test cases.
+
+2. Mocha- Unit test - for function level
+backend and front end, node debugger, easy, mock object
+
+3. Jesmine- E2E test
+
+Mocha
+1. mkdir test_calc
+2. cd test_calc
+3. npm init , hwen it prompts for test command: mocha
+4. npm install --save-dev mocha

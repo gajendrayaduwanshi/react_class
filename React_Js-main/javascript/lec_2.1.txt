@@ -1,0 +1,113 @@
+function volume(){
+  
+  var y = 10;
+  
+  function square(y){
+    return y*2;
+  }
+  return square;
+}
+
+
+console.log(volume(10)); //function
+console.log(volume()); //function
+console.log(volume()(5));
+console.log(square(5));
+
+//arrow function
+
+//(arg1,arg2) => {exp}
+
+myarr1 = [1,2,3,4,5];
+myarr2 = ["raj","rajesh","suraj"];
+
+var result = myarr1.map(x => x*x);
+
+console.log(result);
+
+console.log(myarr1.map(x => x.length*2));
+
+console.log(myarr2.map(x => x.length*2));
+
+const myarr1 = [];
+console.log(myarr1);
+
+//oops
+var person2 = {};
+person2.id = 111;
+person2.printMe = function(){
+  console.log("hello person");
+}
+
+console.log(person2);
+
+console.log(person2.printMe());
+
+var person2 = {};
+person2 = {id:222};
+
+console.log(person2);
+
+
+var person3 = {
+  id: 333,
+  name: "raj",
+  age:20,
+  subjects: ['CS','EC'],
+  info: function(){
+    console.log("hello person");
+  }
+};
+  
+
+console.log(person3);
+
+var person3 = {
+  id: 333,
+  name: {fname:"raj",lname:"singh"},
+  age:20,
+  subjects: ['CS','EC'],
+  info: function(){
+    console.log("hello person");
+  }
+};
+  
+
+  
+console.log(person3['name']['lname']); //block notation
+  
+console.log(person3.name.lname); //dot notation
+
+
+person3['name']['lname'] = "sharma";
+
+console.log(person3['name']['lname']); //block notation
+  
+console.log(person3.name.lname); //dot notation
+
+console.log(person3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

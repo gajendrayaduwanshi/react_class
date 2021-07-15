@@ -1,0 +1,143 @@
+//Deafult parameter, place last
+
+function add(x=5,y=5){
+  return x+y;
+}
+
+console.log(add(6));
+
+
+var a = '5';
+var b = 't';
+
+console.log(typeof a);
+console.log(typeof b);
+
+console.log(typeof parseInt(a));
+console.log(parseInt(b)); //NAN
+console.log(typeof parseInt(b)); //function return type
+
+var myarr = [1,2,3,"raj"]
+
+console.log(typeof myarr);
+
+name = true
+
+name1 = new Boolean();
+
+console.log(name1); // default false
+
+
+console.log(typeof name); //string
+
+
+rollno = "";
+
+console.log(rollno);
+
+name = "ravi";
+
+console.log(name + 5 + 5); //ravi55
+console.log(5 + 5 + name); //10ravi
+
+console.log(5!=='5'); //true
+
+name = "ravi"
+
+if(name=="ravi"){
+  console.log("equal");
+}else{
+  console.log("not equal");
+}
+
+//function expression
+const addition2 = function add(x,y){
+  return x+y;
+}
+
+console.log(add(5,6));
+console.log(addition2(5,6));
+
+console.log(typeof add(5,6));
+console.log(typeof addition4(5,6));
+
+console.log(typeof addition4); //function
+
+
+//hoisting = calling function before decalre
+
+console.log(x(5));
+
+function x(n){
+  return n*n;
+}
+
+//no hoisting in function expression
+console.log(x(5));
+
+const y1 = function x(n){
+  return n*n;
+}
+
+//closure
+function volume(n){
+  function square(n){
+    return n*n;
+  }
+  return n*square(n);
+}
+
+console.log(volume(10));
+
+function volume(n){
+  console.log(square(5));
+  
+  function square(n){
+    return n*n;
+  }
+  return n*square(n);
+}
+
+console.log(volume(10));
+
+console.log(square(10));
+
+function volume1(n){
+  
+  function square1(n){
+    return n*n;
+  }
+  return n*square1(n);
+}
+
+f1 = volume1(10);
+
+console.log(f1); //1000
+
+function volume1(n){
+  
+  function square1(n){
+    return n*n;
+  }
+  return square1;
+}
+
+f1 = volume1(10);
+
+console.log(f1);
+
+function volume1(n){
+  
+  function square1(n){
+    return n*n;
+  }
+  return square1;
+}
+
+f1 = volume1(10);
+f2 = volume1(100); //10 or 100 no role to play it returns function object
+
+console.log(f1);
+console.log(f2);
+console.log(f1==f2);
+

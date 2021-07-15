@@ -1,0 +1,63 @@
+Redux - "state container"
+
+Predictable State Container for JS Apps
+
+or
+
+State Container for JS Apps
+
+or
+
+immutable object which has global state
+
+1. why do we need Redux?
+In React we manage state at component level -> no way of managing application level state --> Global state
+we need redux for managing global level state - accesing/updating for any redux-connected components
+
+2. Tracking changes in application using Redux Dev Tool
+
+can i use contextAPI? -- yes we can use for smaller application but redux is good for bigger application and better centralized management.
+
+Terminologies
+1. Actions- sending data to Redux store.
+2. Reducers- immutable, takes state and action and returns copy of the entire state
+3. Store- state lives in store, object
+4. Dispatch- method, to update redux state
+5. connect- function to connect react to redux
+6. container- connected components are container
+
+
+
+Redux
+1. Redux - core redux library
+2. React Redux - React bindings for Redux
+3. Redux thunk - Async middleware for Redux
+4. Redux DevTools Extension
+
+
+steps for setting up app-
+1. npx create-react-app my-app
+2. cd my-app
+3. npm i -g redux react-redux redux-thunk redux-devtools-extension react-router-dom
+4. created some directory structure in src
+5. Setting up Store - createStore - method to create store
+ applyMiddleware = using thunk middleware
+ Provider - to wrap entire application
+ composeWithDevTools - to connect our app to redux dev tools
+ 6. created App component of hello world
+ 7. Binding with resources
+ 8. use Redux dev tool extension in chrome.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

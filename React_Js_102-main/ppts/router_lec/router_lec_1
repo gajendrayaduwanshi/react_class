@@ -1,0 +1,26 @@
+Routing - frontend or SPA, navigation, path = "/posts" -> component 
+path = "/posts/:postId" -> component with id
+
+
+steps:
+1. npx create-react-app demo-router
+2. cd demo-router
+3. npm install react-router-dom axios
+
+
+Terminology
+1. BrowserRouter - wraper of entire app routing
+example - mysite.com/about
+<BrowserRouter>
+    <App />
+  </BrowserRouter>
+2. HashRouter - makes URL with hashtag
+example - mysite.com/#about
+3. Route - each individual route
+4. Switch - group all routes together, top to bottom
+	<Switch>
+      <Route exact path="/" component= {HomePage} />
+      <Route exact path="/:id" component= {UserPage} />
+    </Switch>
+5. Link - hyper link in routes
+<p><Link to="/itasworkshop">itasworkshop</Link> on my GitHub</p>

@@ -1,0 +1,36 @@
+first run mongod;--this is server
+then mongo--this is client
+
+>show dbs;
+>use mynewdb;
+>show dbs;
+>db.mynewdb.save({name:"divya"});
+>show dbs;
+>db.mynewdb.find();
+>db.createCollection("mycollection");
+>show collections;
+>db.mycollection.find();
+>db.mycollection.insert({name:"divya"})
+>db.mycollection.find();
+>db.mycollection.drop();
+>show collections;
+>db.mycollection.find();
+
+>db.createCollection("newcol");
+>show databases;
+>db.newcol.insert({name:"divya"})
+>db.newcol.find();
+>db.newcol.insert({name:"divya", class:"first", subject:['os','cs','ps'],marks:100});
+>db.newcol.find();
+
+
+FOR UPDATE
+>db.newcol.update({name:"divya"},{$set:{name:"divi"}})
+>db.newcol.find();
+>db.newcol.find({$where:"this.marks=="100"})
+
+
+selecting
+>db.newcol.find({$where:"this.marks>10" || "this.marks<110"});
+
+
